@@ -8,6 +8,10 @@
 	margin: auto;
 }
 
+body {
+	background-color: #F6F6F6;
+}
+
 .fr {
 	float: right;
 }
@@ -24,11 +28,19 @@ li {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
 }
 
+input, button {
+	padding: 0;
+	border: 0;
+}
 /*字体图标*/
 @font-face {
   font-family: 'icomoon';
@@ -143,7 +155,6 @@ ul {
 
 .inner {
 	height: 140px;
-	background-color: pink;
 	position: relative;
 }
 
@@ -153,7 +164,8 @@ ul {
 	position: absolute;
 	top: -30px;
 	left: 0;
-	background-color: purple;	
+	background-color: purple;
+	box-shadow: 0 -12px 10px rgba(0,0,0,.2);
 }
 
 .logo h1 {
@@ -168,5 +180,111 @@ ul {
 	/*隐藏logo里面的字*/
 	text-indent: -999px;
 	overflow: hidden;
+}
+
+.search {
+	width: 550px;
+	height: 35px;
+	position: absolute;
+	top: 25px;
+	left: 320px;
+}
+
+/*两个行内块元素之间有缝隙,可以加浮动去掉*/
+.search input {
+	width: 493px;
+	height: 33px;
+	border: 1px solid #F10215;
+	padding: 0 0 0 5px;
+	outline: none;
+	float: left;
+}
+
+.search button {
+	width: 50px;
+	height: 35px;
+	background-color: #F10215;
+	float: left;
+	cursor: pointer;
+	outline: none;
+}
+
+.search button i {
+	font-family: "icomoon";
+	font-style: normal;
+	color: #fff;
+	font-size: 16px;
+}
+
+.search em {
+	position: absolute;
+	width: 19px;
+	height: 15px;
+	background-color: blue;
+	top: 10px;
+	right: 65px;
+	cursor: pointer;
+	background: url(../img/sprite-search.png) no-repeat;
+}
+
+.search em:hover {
+	background-position: -30px 0;
+}
+
+.hotwords {
+	position: absolute;
+	top: 70px;
+	left: 320px;
+}
+
+.hotwords a {
+	color: #9e9B99;
+	font-size: 12px;
+}
+
+.hotwords a:hover {
+	color: #F10215;
+}
+
+.mycar {
+	width: 188px;
+	height: 33px;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 25px;
+	right: 100px;
+	text-align: center;
+	line-height: 33px;
+}
+
+.mycar a {
+	font-size: 12px;
+	color: #F10215;
+}
+
+.mycar i {
+	font-family: "icomoon";
+	font-style: normal;
+	color: #F10215;
+}
+
+.mycar s {
+	position: absolute;
+	text-decoration: none;
+	top: 5px;
+	left: 140px;
+	background-color: #F10215;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	padding: 0 3px;
+	border-radius: 7px;
+	color: white;
+}
+
+.computer {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
 }
 /*header部分结束*/
