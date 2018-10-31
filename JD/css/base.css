@@ -2,7 +2,9 @@
  * 公共样式
  */
 
+
 /*版心*/
+
 .w {
 	width: 1190px;
 	margin: auto;
@@ -37,23 +39,41 @@ ul {
 	padding: 0;
 }
 
-input, button {
+input,
+button {
 	padding: 0;
 	border: 0;
 }
-/*字体图标*/
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?axvffw');
-  src:  url('../fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?axvffw') format('truetype'),
-    url('../fonts/icomoon.woff?axvffw') format('woff'),
-    url('../fonts/icomoon.svg?axvffw#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+	/* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */
 }
 
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+
+/*字体图标*/
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?axvffw');
+	src: url('../fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?axvffw') format('truetype'), url('../fonts/icomoon.woff?axvffw') format('woff'), url('../fonts/icomoon.svg?axvffw#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 /*京东顶部样式start*/
+
 .J_event {
 	background-color: #000;
 }
@@ -78,9 +98,13 @@ input, button {
 	color: #fff;
 	background: rgba(0, 0, 0, 0.4);
 }
+
+
 /*京东顶部样式end*/
 
+
 /*京东快捷导航栏start*/
+
 .shortcut {
 	height: 30px;
 	background-color: #E3E4E5;
@@ -146,9 +170,13 @@ input, button {
 	left: -8px;
 	top: 35px;
 }
+
+
 /*京东快捷导航栏end*/
 
+
 /*header部分开始*/
+
 .header {
 	height: 144px;
 }
@@ -165,7 +193,7 @@ input, button {
 	top: -30px;
 	left: 0;
 	background-color: purple;
-	box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+	box-shadow: 0 -12px 10px rgba(0, 0, 0, .2);
 }
 
 .logo h1 {
@@ -190,7 +218,9 @@ input, button {
 	left: 320px;
 }
 
+
 /*两个行内块元素之间有缝隙,可以加浮动去掉*/
+
 .search input {
 	width: 493px;
 	height: 33px;
@@ -287,4 +317,67 @@ input, button {
 	right: 0;
 	bottom: 10px;
 }
+
+.navitems {
+	position: absolute;
+	left: 200px;
+	bottom: 0;
+}
+
+.navitems ul {
+	float: left;
+}
+
+.navitems ul li {
+	float: left;
+	margin-left: 30px;
+}
+
+.navitems li a {
+	font-size: 16px;
+	color: #555A5F;
+	font-weight: 700;
+	height: 40px;
+	line-height: 40px;
+}
+
+.navitems li a:hover {
+	color: #F10215;
+}
+
+.navitems .spacer {
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: -10px;
+}
+
+
 /*header部分结束*/
+
+
+/*footer部分开始*/
+
+.footer {
+	height: 560px;
+	background-color: #EAEAEA;
+}
+
+.footer_service {
+	border-bottom: 1px solid #dedede;
+}
+
+.service-inner {
+	background-color: pink;
+	padding: 30px 0;
+}
+
+.service-inner li {
+	float: left;
+	width: 297px;
+	height: 42px;
+	background-color: purple;
+}
+
+
+/*footer部分结束*/
