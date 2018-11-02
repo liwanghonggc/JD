@@ -63,7 +63,6 @@
 .jd-clo3 {
 	width: 190px;
 	height: 480px;
-	background-color: yellow;
 	float: right;
 }
 
@@ -132,4 +131,22 @@
 
 .jd-clo2-hd .current {
 	background-color: #F10215;
+}
+
+.user {
+	height: 115px;
+	background-color: pink;
+	border-bottom: 1px solid #ccc;
+	padding: 20px 15px 0;
+}
+
+.news {
+	height: 154px;
+	background-color: purple;
+	border-bottom: 1px solid #ccc;
+}
+
+.jd-service {
+	height: 210px;
+	background-color: skyblue;
 }
